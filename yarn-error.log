@@ -1,0 +1,48 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\raolingjian\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add node-sass@latest
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\TortoiseSVN\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\nodejs\;C:\Users\raolingjian\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\raolingjian\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\raolingjian\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\vue3\vite-vue3-starter\node_modules\esbuild-windows-64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "vite-vue3-starter",
+    "version": "0.0.0",
+    "scripts": {
+      "start": "vite",
+      "build": "vue-tsc --noEmit && vite build",
+      "serve": "vite preview"
+    },
+    "dependencies": {
+      "element-plus": "^1.1.0-beta.20",
+      "vue": "^3.2.16",
+      "vue-router": "^4.0.12",
+      "vuex": "^4.0.2"
+    },
+    "devDependencies": {
+      "@types/node": "^16.11.1",
+      "@vitejs/plugin-vue": "^1.9.3",
+      "typescript": "^4.4.3",
+      "vite": "^2.6.4",
+      "vite-plugin-element-plus": "0.0.12",
+      "vue-tsc": "^0.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
