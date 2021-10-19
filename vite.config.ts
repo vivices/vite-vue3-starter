@@ -5,21 +5,16 @@ import importElementPlus from 'vite-plugin-element-plus' // element-plus按需�
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    importElementPlus({
-      useSource: true
-    }),
-  ],
+  plugins: [vue(), importElementPlus({})],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
   },
-  base: './', //打包路径
+  base: './', // 打包路径
   server: {
     port: 8088,
     open: true, // 是否自动打开浏览器
-    cors: true, // 是否能够跨域
+    cors: true // 是否能够跨域
   }
 })

@@ -1,17 +1,13 @@
-import { stat } from "fs"
-import { createStore } from "vuex"
-
-const defaultState = {
-  count: 0
-}
+import { createStore } from 'vuex'
+import NumFactoryStateTypes from './types'
 
 export default createStore({
-  state() {
-    return defaultState
+  state: {
+    count: 0
   },
   mutations: {
-    increment(state: typeof defaultState) {
-      state.count++
+    increment(state: NumFactoryStateTypes) {
+      state.count *= 1
     }
   },
   actions: {
@@ -20,7 +16,7 @@ export default createStore({
     }
   },
   getters: {
-    double(state: typeof defaultState) {
+    double(state: NumFactoryStateTypes) {
       return 2 * state.count
     }
   }

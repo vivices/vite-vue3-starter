@@ -4,18 +4,34 @@
   "scripts": {
     "start": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prepare": "husky install",
+    "eslint-fix": "eslint src/**/*.*  --fix"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
   },
   "dependencies": {
     "axios": "^0.23.0",
-    "element-plus": "^1.1.0-beta.20",
+    "element-plus": "^1.1.0-beta.21",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
     "@vitejs/plugin-vue": "^1.9.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
     "stylus": "^0.55.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",

@@ -10,25 +10,25 @@ const axios = Axios.create({
 
 // 前置拦截器
 axios.interceptors.request.use(
-  config => {
+  (config) => {
     // config在这里做处理
     return config
   },
-  error => {
+  (error) => {
     return Promise.reject(error)
   }
 )
 
 // 后置拦截器，获取到响应时拦截
 axios.interceptors.response.use(
-  response => {
+  (response) => {
     /**
      * 根据你的项目实际情况来对 response 和 error 做处理
      * 这里对 response 和 error 不做任何处理，直接返回
      */
     return response
   },
-  error => {
+  (error) => {
     if (error.response && error.response.data) {
       const code = error.response.status
       const msg = error.response.data.message
