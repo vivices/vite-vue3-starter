@@ -32,3 +32,38 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 ├── vite.config.ts                 // Vite 配置文件
 └── package.json
 ```
+
+#eslint
+
+```
+ESLint风格 - 使用airbnb默认配置
+vscode用户请安装插件:
+  1.ESLint
+  2.EditorConfig - 支持EditorConfig配置
+
+设置保存保存文件自动执行eslint --fix :
+  1.VSCode 在 settings.json 设置文件中，增加以下代码
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+  2.WebStorm 打开设置窗口，按如下操作，最后点击 Apply -> OK
+
+解决 Prettier 和 ESLint 的冲突
+
+
+```
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm start
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
