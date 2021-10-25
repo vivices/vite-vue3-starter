@@ -5,10 +5,10 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential',
     'airbnb-base',
     'plugin:prettier/recommended', // 添加 prettier 插件
-    'plugin:jest/recommended'
+    'plugin:jest/recommended' // 单元测试
   ],
   parserOptions: {
     ecmaVersion: 13,

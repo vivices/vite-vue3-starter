@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [vue(), importElementPlus({})],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
+      '@': resolve(__dirname, 'src'),
+      assets: resolve(__dirname, './src/assets')
     }
   },
   base: './', // 打包路径
