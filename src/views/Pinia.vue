@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Vuex</div>
+  <div>Pinia</div>
 </template>
 
 <style scoped></style>
