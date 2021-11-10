@@ -7,9 +7,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/Home.vue')
   },
   {
-    path: '/vuex',
-    name: 'Vuex',
-    component: () => import('@/views/Vuex.vue')
+    path: '/pinia',
+    name: 'Pinia',
+    component: () => import('@/views/Pinia.vue')
   },
   {
     path: '/axios',
